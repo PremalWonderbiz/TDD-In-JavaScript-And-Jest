@@ -1,7 +1,3 @@
-export const game = {
-  isAlive : false
-};
-
 export function isAlive(cell, neighbours) {
   return (!Boolean(cell) && neighbours === 3) || (Boolean(cell) && neighbours === 2)  ? 1 : 0;
 }
@@ -56,4 +52,26 @@ const createElement = className => {
   const element = document.createElement('div');
   element.className = className;
   return element;
+}
+
+export function attachGridEventHandler() {
+  document.getElementById("grid").addEventListener("click", (e) => {
+    const className = e.target.className;
+    e.target.className = className.includes("dead") 
+                        ? className.replace("dead", "live")
+                        : className.replace("live", "dead");                     
+  });
+}
+
+export function getCellsFromDom() {
+  return Array.from(document.querySelectorAll(".cell"))
+  .map(item => item.className.includes('dead') ? 0 : 1);
+}
+
+export function start(){
+  let generation = getCellsFromDom();
+  setInterval(() => {
+    generation = regenerate(generation);
+    drawGrid();
+  }, 500);
 }
