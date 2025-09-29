@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1759149092137" clover="3.2.0">
+  <project timestamp="1759149092137" name="All files">
+    <metrics statements="26" coveredstatements="26" conditionals="16" coveredconditionals="16" methods="12" coveredmethods="12" elements="54" coveredelements="54" complexity="0" loc="26" ncloc="26" packages="1" files="1" classes="1"/>
+    <file name="game.js" path="C:\Users\Premal Kadam\Documents\Learnings\TDD\TDD_Javascript_Jest\TDD_Example\game-of-life\game.js">
+      <metrics statements="26" coveredstatements="26" conditionals="16" coveredconditionals="16" methods="12" coveredmethods="12"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="6" count="13" type="cond" truecount="6" falsecount="0"/>
+      <line num="10" count="5" type="stmt"/>
+      <line num="14" count="9" type="stmt"/>
+      <line num="17" count="72" type="cond" truecount="2" falsecount="0"/>
+      <line num="19" count="1" type="stmt"/>
+      <line num="20" count="15" type="cond" truecount="2" falsecount="0"/>
+      <line num="24" count="1" type="stmt"/>
+      <line num="25" count="15" type="cond" truecount="2" falsecount="0"/>
+      <line num="29" count="1" type="stmt"/>
+      <line num="30" count="15" type="stmt"/>
+      <line num="31" count="15" type="stmt"/>
+      <line num="40" count="3" type="stmt"/>
+      <line num="41" count="3" type="stmt"/>
+      <line num="43" count="3" type="stmt"/>
+      <line num="44" count="3" type="stmt"/>
+      <line num="45" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="46" count="4" type="stmt"/>
+      <line num="47" count="4" type="stmt"/>
+      <line num="49" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="50" count="6" type="stmt"/>
+      <line num="52" count="3" type="stmt"/>
+      <line num="55" count="1" type="stmt"/>
+      <line num="56" count="13" type="stmt"/>
+      <line num="57" count="13" type="stmt"/>
+      <line num="58" count="13" type="stmt"/>
+    </file>
+  </project>
+</coverage>
