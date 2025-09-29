@@ -1,5 +1,5 @@
-// import { attachGridEventHandler, countNeighbours, drawGrid, game, generate, getCellsFromDom, isAlive, regenerate, start } from '../game.js';
-import * as game from "../game.js";
+import { attachGridEventHandler, countNeighbours, drawGrid, game, generate, getCellsFromDom, isAlive, regenerate, start } from '../game.js';
+// import * as game from "../game.js";
 
 describe("Game of Life", () => {
     test("game should be defined", () => {
@@ -105,7 +105,7 @@ describe("Game of Life", () => {
         test("click on cells should toggle live dead", () => {
             document.body.innerHTML = '<div id="grid"></div>';
             drawGrid([0]);
-            game.attachGridEventHandler();
+            attachGridEventHandler();
             expect(document.querySelectorAll('.dead').length).toEqual(1);
             expect(document.querySelectorAll('.live').length).toEqual(0);
             document.querySelector('.dead').click();

@@ -1,3 +1,7 @@
+export const game = {
+  isAlive : false
+};
+
 export function isAlive(cell, neighbours) {
   return (!Boolean(cell) && neighbours === 3) || (Boolean(cell) && neighbours === 2)  ? 1 : 0;
 }
