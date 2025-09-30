@@ -33,26 +33,20 @@ A practical, test-driven implementation of Conway’s Game of Life, starting fro
 - Install dependencies:
   - npm install
 - Run tests once:
-  - npm test
-- Watch tests:
-  - npm run test:watch
+  - npm run test
 - Coverage:
-  - npm run test:coverage
+  - npm run coverage
 - Open demo (simple static file server examples):
-  - npm run dev (if configured) or open public/index.html with a live server extension.
+  - run index.htm with live server
 
 ## Scripts
 
 - test: Runs the full suite once.
-- test:watch: Runs Jest in watch mode for TDD workflow.
 - test:coverage: Generates coverage reports to ./coverage.
-- dev: Optional script to serve public/ for quick UI checks (e.g., using serve/http-server).
 
 Example package.json snippets:
-- "test": "jest"
-- "test:watch": "jest --watch"
-- "test:coverage": "jest --coverage"
-- "dev": "npx serve public -l 5173".
+- "test": "node --experimental-vm-modules \"./node_modules/jest/bin/jest.js\"",
+- "test:coverage": "node --experimental-vm-modules \"./node_modules/jest/bin/jest.js\" --coverage"
 
 ## TDD workflow
 
